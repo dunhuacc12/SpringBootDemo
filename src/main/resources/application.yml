@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    name: test
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: TTRANSFERUSER
+    password: Oracle12
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    maxActive: 20
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    maxOpenPreparedStatements: 20
+
+server:
+  port: 8080
+  servlet:
+    context-path: /springboot
+
+logging :
+  level :
+    root : debug
+  path : ./logs
