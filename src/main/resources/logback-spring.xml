@@ -44,6 +44,11 @@
         </rollingPolicy>
     </appender>
 
+    <logger name="common_log" level="DEBUG">
+        <appender-ref ref="consoleLog"/>
+        <appender-ref ref="fileInfoLog"/>
+        <appender-ref ref="fileErrorLog"/>
+    </logger>
 	<logger name="biz_log" level="DEBUG">
         <appender-ref ref="consoleLog"/>
         <appender-ref ref="fileInfoLog"/>
